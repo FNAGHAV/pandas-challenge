@@ -1,60 +1,34 @@
 # pandas-challenge
 Challenge 4
+PyCitySchools Challenge - Report
 
-
-# School District Analysis
-This project involved a comprehensive analysis of the school district's key metrics. Calculations included various performance indicators such as average scores, passing percentages, and overall performance for both the district and individual schools.
-
-# District Summary
-The district summary provided an overview of key metrics:
-
-Total number of unique schools
-Total students
-Total budget
-Average math score
-Average reading score
-Percentage passing math
-Percentage passing reading
-Overall passing percentage (students passing both math and reading)
-
-# School Summary
-The school summary broke down key metrics for each individual school:
-
-School name
-School type
-Total students
-Total school budget
-Per student budget
-Average math score
-Average reading score
-Percentage passing math
-Percentage passing reading
-Overall passing percentage
-Highest-Performing Schools (by % Overall Passing)
-The top-performing schools were identified by sorting schools based on the overall passing percentage in descending order.
-
-# Lowest-Performing Schools (by % Overall Passing)
-The lowest-performing schools were identified by sorting schools based on the overall passing percentage in ascending order.
-
-# Math Scores by Grade
-This section provided a DataFrame listing the average math scores for students in each grade level (9th, 10th, 11th, 12th) at each school.
-
-# Reading Scores by Grade
-A DataFrame was created to list the average reading scores for students in each grade level (9th, 10th, 11th, 12th) at each school.
-
-# Scores by School Spending
-A table was generated to break down school performance based on average spending ranges per student. Four bins with reasonable cutoff values were used to group schools by spending.
-
-# Scores by School Size
-A DataFrame was created to break down school performance based on school size (small, medium, or large).
-
-# Scores by School Type
-A table was generated to show school performance based on the "School Type."
-
-# Implementation Details
-The analysis was implemented in Python using the Pandas library for data manipulation and analysis.
-The code was structured into sections, each focusing on a specific aspect of the analysis.
-Data was read from a CSV file containing relevant information about schools and students.
-
-# Instructions for Running the Analysis
-Clone the repository using git@github.com:FNAGHAV/pandas-challenge.git 
+Summary of Analysis:
+The analysis delved into various metrics related to school performance in the PyCity School District, covering district and school-level summaries, top-performing and bottom-performing schools, average math and reading scores by grade, and the influence of school spending, size, and type on academic performance.
+District Summary:
+Total Number of Schools: The district comprises 15 schools, identified using len(data.unique()).
+Total Students: The academic dynamics involve 39,170 students, revealed by .count().
+Total Budget: The cumulative budget for all schools exceeds $24.6 million, uncovered using .sum().
+Average Math Score: The district-wide average math score stands at 78.99, calculated using .mean().
+Average Reading Score: The district-wide average reading score is 81.88, determined by .mean().
+Math Passing Rate: Approximately 74.98% of students achieved passing scores in math.
+Reading Passing Rate: A higher proportion, 85.81%, achieved passing scores in reading.
+Overall Passing Rate: Combining math and reading performance results in an overall passing rate of 65.17%.
+School Summary:
+The detailed analysis includes school-specific information on type, total students, total school budget, budget per student, average math and reading scores, passing math and reading percentages, and overall passing percentage. The data reveals variations in student numbers, budgets, and scores among schools, with notable trends in math performance.
+Top and Bottom Performing Schools:
+Top Five: The top-performing schools, based on overall passing percentage, are charter schools: Cabrera, Thomas, Griffin, Wilson, and Pena.
+Bottom Five: District schools, including Rodriguez, Figueroa, Huang, Johnson, and Ford, rank as the bottom-performing based on overall passing percentage.
+Scores by School Spending:
+The impact of budget per student on academic performance is analyzed using spending bins. Schools with a budget per student below $585 outperform others, with a gradual decline in performance as spending per student increases.
+Scores by School Size:
+Schools are categorized by size (small, medium, large) to assess the relationship between school size and academic outcomes. Small-sized schools outperform both medium and large-sized schools, with large-sized schools exhibiting the lowest overall passing percentage.
+Scores by School Type:
+Comparing charter and district schools reveals consistent superiority in academic performance for charter schools across all metrics.
+Conclusions:
+Impact of School Size:
+Smaller schools demonstrate higher overall passing percentages compared to larger schools.
+Schools with fewer students showcase superior academic performance.
+School Type and Academic Performance:
+Charter schools consistently outperform district schools in average scores and passing rates.
+The type of school significantly influences student success.
+These conclusions highlight the need for further exploration into factors contributing to the success of smaller schools and charter schools. The findings can inform policy decisions aimed at enhancing academic outcomes in the PyCity School District.
