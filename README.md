@@ -1,7 +1,5 @@
 # School District Analysis
 
-PyCitySchools Challenge - Report
-
 Summary of Analysis:
 The analysis delved into various metrics related to school performance in the PyCity School District, covering district and school-level summaries, top-performing and bottom-performing schools, average math and reading scores by grade, and the influence of school spending, size, and type on academic performance.
 
